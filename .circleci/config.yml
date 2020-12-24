@@ -1,0 +1,10 @@
+jobs:
+  build:
+    docker:
+      - image: circleci/openjdk:8-stretch
+    steps:
+      - checkout
+      - run:
+          name: Run Application
+          command: 
+            sudo java -jar /config/test-0.0.1-SNAPSHOT.jar
