@@ -7,4 +7,4 @@ jobs:
       - run:
           name: Run Application
           command: 
-            sudo java -jar /src/test-0.0.1-SNAPSHOT.jar
+            sudo java -jar test-0.0.1-SNAPSHOT.jar
