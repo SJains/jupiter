@@ -1,10 +1,14 @@
+version: 2.1
 jobs:
   build:
+    working_directory: ~/jupiter
     docker:
-      - image: circleci/openjdk:8-stretch
+      - image: circleci/node:10.16.3
     steps:
       - checkout
       - run:
-          name: Run Application
-          command: 
-            java -jar https://s3.amazonaws.com/jupiter-circleci/test-0.0.1-SNAPSHOT.jar
+          name: update-npm
+          command: 'sudo npm install -g npm@5'
+      - run:
+          name: test
+          command: npm ApiCall
