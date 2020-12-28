@@ -5,7 +5,7 @@ var suiteType = "MINI";
 var environment = "Staging";
 var executionFocus = "ACCURACY_WITH_NO_REVIEW";
 var browserMode = "HEADLESS_EXECUTION";
-var basicAuthCred = "Basic c3VoYW5pOnN1aGFuaWpAMW4=";
+var basicAuthCred = "Basic c3VoYW5pOnN1aEBuMWphaW4=";
 var cycleIdNumber = postCall();
 while(getCall(cycleIdNumber).split(" ")[1] === "IN_PROGRESS") {
 	console.log(getCall(cycleIdNumber).split(" ")[0] + " Cycle is In-Progress");
