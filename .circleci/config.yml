@@ -11,4 +11,4 @@ jobs:
           command: 'sudo npm install -g npm@5'
       - run:
           name: test2
-          command: node /ApiCall.js
+          command: node ApiCall.js
