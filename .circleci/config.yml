@@ -11,4 +11,4 @@ jobs:
           command: 'sudo npm install -g npm@5'
       - run:
           name: test2
-          command: node /jupiter/src/main/js/com/webomates/test/ApiCall.js
+          command: node /ApiCall.js
