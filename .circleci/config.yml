@@ -10,5 +10,8 @@ jobs:
           name: update-npm
           command: 'sudo npm install -g npm@5'
       - run:
+          name: install xmlhttp
+          command: 'sudo npm install xmlhttprequest'
+      - run:
           name: test2
           command: node ApiCall.js
